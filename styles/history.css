@@ -1,0 +1,50 @@
+@import url('style-general.css');
+
+.section-history{
+    height: 140vh;
+    background-color: var(--azul);
+    padding-top: 250px;
+}
+.text-history{
+    width: 70%;
+    margin:auto;
+    text-align: center;
+}
+
+.text-history h2{
+    font-family: var(--titulos);
+    color: var(--gris);
+    margin-bottom:20px;
+}
+
+.text-history h3{
+    font-family: var(--titulos);
+    font-size: 50px;
+    color: var(--gris);
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.text-history p{
+    color: var(--gris);
+    font-size: 1rem;
+    font-family: var(--parrafos);
+    line-height: 2rem;
+}
+
+.img-history{
+    margin-top: 50px;
+}
+
+.container-img-story{
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.agave{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}

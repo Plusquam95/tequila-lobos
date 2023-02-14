@@ -1,0 +1,58 @@
+@import url('style-general.css');
+
+.section-header{
+    background-image: url('../src/background-header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+    background-attachment: fixed;
+}
+
+.title h1{
+    font-family:var(--titulos);
+    text-align: center;
+    font-size: 50px;
+    width: 70%;
+    margin: auto;
+    font-weight: 100;
+    margin-bottom: 50px;
+    margin-top:150px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+
+.logo-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-header::before{
+    content:url('../src/hr.png');
+    margin-right:15px ;
+}
+
+.logo-header::after{
+    content:url('../src/hr.png');
+    margin-left: 15px;
+}
+
+.count-page{
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    font-family: var(--titulos);
+}
+
+.count-page span{
+    font-size: 50px;
+}
+
+.img-header{
+    margin-top: 50px;
+}

@@ -1,0 +1,34 @@
+@import url('style-general.css');
+
+.section-anejo{
+    background-color: var(--amarillo);
+    padding: 150px;
+    
+}
+
+.grid-anejo{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+} 
+
+.text-grid-anejo h2{
+    font-size: 60px;
+    font-family: var(--titulos);
+    font-weight: 200;
+}
+
+.parrafo-anejo{
+    align-self: self-end;
+    font-family: var(--parrafos);
+    line-height: 40px;
+}
+
+.after-img-anejo{
+    transform: rotate(-45deg);
+    opacity: .3; 
+}
+
+

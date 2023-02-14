@@ -1,0 +1,47 @@
+@import url('style-general.css');
+
+.section-blanco{
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gris);
+}
+.grid-blanco{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.text-grid-blanco h2{
+    font-size: 60px;
+    font-family: var(--titulos);
+    font-weight: 200;
+}
+
+.parrafo-blanco{
+    align-self: self-end;
+    font-family: var(--parrafos);
+    line-height: 40px;
+}
+
+.container-img{
+    display: flex;
+    position: relative;
+    width: 800px;
+    height: 700px;
+}
+
+.container-img img{
+    width:800px;
+    position: absolute;
+    left: 0;
+    margin: auto;
+}
+
+.after-img{
+    transform: rotate(45deg);
+    opacity: .3;
+}

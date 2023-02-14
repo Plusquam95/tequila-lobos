@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+      /* colores */
+    --amarillo:#E4E83A;
+    --azul:#02182B;
+    --gris:#EDEDED;
+      /* tipografías   */
+    --titulos:'IM FELL French Canon SC';  
+    --parrafos:'Roboto';
+}
