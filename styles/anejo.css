@@ -2,13 +2,15 @@
 
 .section-anejo{
     background-color: var(--amarillo);
-    padding: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
 .grid-anejo{
     width: 90%;
-    margin: auto;
+    margin:300px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -27,8 +29,49 @@
 }
 
 .after-img-anejo{
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
     opacity: .3; 
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width:768px){
+
+    .section-anejo{
+        padding: 0px;
+    }
+    .grid-anejo{
+        margin: auto;
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .container-img{
+        position: static;
+        width: 350px;
+        height: 350px;
+    }
+
+    .container-img img{
+
+        width: 200px;
+        position: static !important;
+    }
+    .after-img-anejo{
+        display: none;
+        margin: 20px auto;
+    }
+
+    .text-grid-anejo h2{
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .parrafo-anejo p{
+        text-align: justify;
+        margin-bottom: 100px;
+    }
+}
+
 
 

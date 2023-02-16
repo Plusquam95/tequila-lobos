@@ -1,6 +1,6 @@
 @import url('style-general.css');
 
-.section-history{
+.section-history{                      
     height: 140vh;
     background-color: var(--azul);
     padding-top: 250px;
@@ -47,4 +47,36 @@
     margin-top: 100px;
     display: flex;
     justify-content: center;
+}
+
+
+@media(max-width:768px){
+    .section-history{
+        height: auto;
+        padding-top: 50px;
+    }
+
+    .text-history{
+        width: 90%;
+    }
+
+    .text-history p{
+        text-align: justify;
+        line-height: 30px;
+    }
+
+    .text-history h3{
+        font-size:35px;
+    }
+    .container-img-story{
+        display:inline-block;
+    }
+
+    .container-img-story img {
+        width: 370px;
+    }
+
+    .img-guys{
+        display: none;
+    }
 }

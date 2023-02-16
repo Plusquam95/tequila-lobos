@@ -22,3 +22,26 @@
     font-family: var(--parrafos);
     line-height: 2rem;
 }
+
+
+@media (max-width:768px){
+
+    .container-fan-experiencie{
+        height: auto;
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+    .text-experience h2{
+        text-align: center;
+    }
+
+    .text-experience p{
+        width: 90%;
+        margin: auto;
+        text-align: justify;
+    }
+
+    .img-experience-2 img{
+        width: 350px;
+    }
+}

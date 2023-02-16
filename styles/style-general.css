@@ -12,4 +12,7 @@
       /* tipografías   */
     --titulos:'IM FELL French Canon SC';  
     --parrafos:'Roboto';
+
+    /* FONT-SIZE */
+    --fontsize-responsive:20px;
 }

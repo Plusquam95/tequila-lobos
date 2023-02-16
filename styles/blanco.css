@@ -1,7 +1,6 @@
 @import url('style-general.css');
 
 .section-blanco{
-    height: 120vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +8,7 @@
 }
 .grid-blanco{
     width: 90%;
-    margin: auto;
+    margin:300px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -44,4 +43,41 @@
 .after-img{
     transform: rotate(45deg);
     opacity: .3;
+}
+
+
+@media (max-width:768px){
+
+    .section-blanco{
+        height: auto;
+    }
+    .grid-blanco{
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .container-img{
+        position: static;
+        width: 350px;
+        height: 350px;
+    }
+
+    .container-img img{
+
+        width: 200px;
+       position: static !important;
+    }
+    .after-img{
+        display: none;
+        margin: 20px auto;
+    }
+
+    .text-grid-blanco h2{
+        text-align: center;
+    }
+
+    .parrafo-blanco p{
+        text-align: justify;
+    }
 }

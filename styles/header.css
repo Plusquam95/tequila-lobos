@@ -56,3 +56,26 @@
 .img-header{
     margin-top: 50px;
 }
+
+
+@media(max-width:768px){
+
+    .section-header{
+        height: 100vh;
+    }
+    .title h1{
+        font-size:20px;
+        margin-top: 150px;
+    }
+
+    .img-header img{
+        width: 350px;
+    }
+
+    .logo-header{
+        display: none;
+    }
+    .count-page{
+        display: none;
+    }
+}

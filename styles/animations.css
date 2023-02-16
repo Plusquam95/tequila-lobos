@@ -1,0 +1,44 @@
+@import url('style-general.css');
+
+
+
+.animate-img{
+    transition: .7s ease-in-out;
+}
+.show{
+    transform: rotate(-10deg);
+}
+
+
+/* ANIMATIONS BEFORE AÑEJO Y BLANCO */
+
+.animate-img-2{
+    transition: .7s ease-in-out;
+}
+
+.show-before{
+    transform:rotate(-10deg);
+}
+
+
+.animated-apart{
+    animation:slide-top .5s cubic-bezier(.25,.46,.45,.94) both
+}
+@keyframes slide-top{0%{transform:translateY(300px)}100%{transform:translateY(0px)}}
+
+.animated-apart-h1{
+    animation:slide-top-h1 1s cubic-bezier(.25,.46,.45,.94) both
+}
+@keyframes slide-top-h1{0%{transform:translateY(-300px)}100%{transform:translateY(0px)}}
+
+
+.logo-header::after{
+    animation:slide-top-hr-1 1s cubic-bezier(.25,.46,.45,.94) both
+}
+@keyframes slide-top-hr-1{0%{transform:translateX(300px)}100%{transform:translateY(0px)}}
+
+
+.logo-header::before{
+    animation:slide-top-hr-2 1s cubic-bezier(.25,.46,.45,.94) both
+}
+@keyframes slide-top-hr-2{0%{transform:translateX(-300px)}100%{transform:translateY(0px)}}

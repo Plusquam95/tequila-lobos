@@ -10,9 +10,19 @@ nav {
     margin: auto;
     justify-content: space-between;
     align-items: center;
+    transition: .5s ease-in-out;
 
 
 }
+
+.nav-scrolled{
+    transition: .2 ease-in-out;
+    background-color: var(--gris);
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+}
+
 .social ul {
     display: flex;
     align-items: center;
@@ -41,6 +51,7 @@ nav {
     width: 3rem;
     height: 3rem;
     gap: 1rem;
+    cursor: pointer;
 }
 
 .menu-nav{
@@ -63,3 +74,16 @@ nav {
     transform: rotate(-45deg);
 }
 
+
+@media (max-width:768px){
+
+    .logo span{
+        display: none;
+    }
+
+    .social{
+        display: none;
+    }
+
+    
+}

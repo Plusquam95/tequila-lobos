@@ -32,3 +32,23 @@
     font-family: var(--parrafos);
     line-height: 30px;
 }
+
+@media (max-width:768px){
+     
+    .section-proceso{
+        height: auto;
+    }
+
+    .container-process{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .parrafo-process{
+        margin-top: 100px;
+        margin-left: 0;
+    }
+    .img-process img{
+        width: 350px;
+    }
+}
+
