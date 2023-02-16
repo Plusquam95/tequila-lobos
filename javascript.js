@@ -70,3 +70,32 @@ const observer = new IntersectionObserver(
         sectionOneOptions);
 
 sectionOneObserver.observe(sectionIntersected);
+
+
+const tituloAnimado = document.querySelectorAll('.animated-titulo');
+const observando = new IntersectionObserver( 
+entries => {
+    entries.forEach(entry => {
+
+        entry.target.classList.toggle("titulos-animados", entry.isIntersecting)
+    })
+}
+)
+tituloAnimado.forEach( tituloAnimado => {
+    observando.observe(tituloAnimado);
+})
+
+
+
+const parrafoAnimado = document.querySelectorAll('.animated-parrafo');
+const observandoParrafos = new IntersectionObserver( 
+entries => {
+    entries.forEach(entry => {
+
+        entry.target.classList.toggle("animando-parrafos", entry.isIntersecting)
+    })
+}
+)
+parrafoAnimado.forEach( parrafoAnimado => {
+    observandoParrafos.observe(parrafoAnimado);
+})

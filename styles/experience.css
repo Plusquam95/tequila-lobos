@@ -44,4 +44,9 @@
     .img-experience-2 img{
         width: 350px;
     }
+
+    .experience-hr{
+       display: none;
+    }
+
 }

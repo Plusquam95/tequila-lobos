@@ -42,3 +42,39 @@
     animation:slide-top-hr-2 1s cubic-bezier(.25,.46,.45,.94) both
 }
 @keyframes slide-top-hr-2{0%{transform:translateX(-300px)}100%{transform:translateY(0px)}}
+
+
+.titulos-animados{
+    animation: observer 1.2s ease-in-out;
+}
+
+@keyframes observer{
+
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+.animando-parrafos{
+    animation: observer 2s ease-in-out;
+}
+
+@keyframes observer{
+
+    0%{
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+

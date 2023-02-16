@@ -6,17 +6,19 @@
     background-repeat: no-repeat;
     height: 120vh;
     background-attachment: fixed;
+    display: flex;
 }
 
 .title h1{
     font-family:var(--titulos);
     text-align: center;
     font-size: 50px;
-    width: 70%;
+    width: 90%;
     margin: auto;
     font-weight: 100;
     margin-bottom: 50px;
-    margin-top:150px;
+    /* margin-top:150px; */
+    /* display: none; */
 }
 
 .header{
@@ -47,6 +49,7 @@
     top: 50%;
     right: 50px;
     font-family: var(--titulos);
+    display: none;
 }
 
 .count-page span{
@@ -78,4 +81,5 @@
     .count-page{
         display: none;
     }
+
 }
