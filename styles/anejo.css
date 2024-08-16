@@ -1,77 +1,80 @@
-@import url('style-general.css');
+@import url("style-general.css");
 
-.section-anejo{
-    background-color: var(--amarillo);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.section-anejo {
+  background-color: var(--amarillo);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.grid-anejo{
-    width: 90%;
-    margin:300px auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-} 
-
-.text-grid-anejo h2{
-    font-size: 60px;
-    font-family: var(--titulos);
-    font-weight: 200;
+.seccion-plata {
+  background-color: aliceblue;
 }
 
-.parrafo-anejo{
-    align-self: self-end;
-    font-family: var(--parrafos);
-    line-height: 40px;
+.grid-anejo {
+  width: 90%;
+  display: grid;
+  margin: 200px auto;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
 }
 
-.after-img-anejo{
-    transform: rotate(45deg);
-    opacity: .3; 
+.text-grid-anejo h2 {
+  font-size: 60px;
+  font-family: var(--titulos);
+  font-weight: 200;
+}
+
+.parrafo-anejo {
+  align-self: self-end;
+  font-family: var(--parrafos);
+  line-height: 1.5rem;
+}
+
+.after-img-anejo {
+  transform: rotate(45deg);
+  opacity: 0.1;
+}
+
+.after-img-anejo {
+  position: absolute;
+  width: 300px;
+}
+
+.after-img {
+  transform: rotate(45deg);
+  opacity: 0.3;
+}
+.before-img {
+  width: 200px;
+  position: relative;
+  z-index: 100;
 }
 
 /* MEDIA QUERIES */
 
-@media (max-width:768px){
+@media (max-width: 768px) {
+  .section-anejo {
+    padding-bottom: 100px;
+  }
+  .grid-anejo {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .after-img-anejo {
+    display: none;
+    margin: 20px auto;
+  }
 
-    .section-anejo{
-        padding: 0px;
-    }
-    .grid-anejo{
-        margin: auto;
-        display: flex;
-        flex-direction: column;        
-    }
+  .text-grid-anejo h2 {
+    margin-top: 100px;
+    text-align: center;
+  }
 
-    .container-img{
-        position: static;
-        width: 350px;
-        height: 350px;
-    }
-
-    .container-img img{
-
-        width: 200px;
-        position: static !important;
-    }
-    .after-img-anejo{
-        display: none;
-        margin: 20px auto;
-    }
-
-    .text-grid-anejo h2{
-        margin-top: 100px;
-        text-align: center;
-    }
-
-    .parrafo-anejo p{
-        text-align: justify;
-        margin-bottom: 100px;
-    }
+  .parrafo-anejo p {
+    text-align: justify;
+  }
 }
-
-
-

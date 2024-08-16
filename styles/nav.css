@@ -1,89 +1,162 @@
-@import url('style-general.css');
-.nav{
-    position: fixed;
-    width: 100%;
-    z-index: 200;
+@import url("style-general.css");
+.nav {
+  position: fixed;
+  width: 100%;
+  z-index: 201;
 }
-nav {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
-    transition: .5s ease-in-out;
-
-
+.nav-normal {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s ease-in-out;
 }
-
-.nav-scrolled{
-    transition: .2 ease-in-out;
-    background-color: var(--gris);
-    backdrop-filter: blur(10px);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-
+.nav-gallery {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s ease-in-out;
 }
 
-.social ul {
-    display: flex;
-    align-items: center;
+.nav-scrolled {
+  transition: 0.2 ease-in-out;
+  background-color: #ffffff;
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  transition: 0.3s ease-in-out;
 }
 
-.social ul li {
-    list-style: none;
-    margin-right: 20px;
+.nav-scrolled .menu-social li a {
+  color: black;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
+.nav-scrolled .logo a {
+  color: black;
 }
 
-.logo span{
-    font-family:var(--titulos);
-    font-size:1rem;
+.nav-scrolled .idioma a {
+  color: black;
 }
 
-.animated{
-    margin-left: 50px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 3rem;
-    height: 3rem;
-    gap: 1rem;
-    cursor: pointer;
+.nav-scrolled .menu-nav {
+  background-color: black;
 }
 
-.menu-nav{
-    background-color: black;
-    height: 1.5px;
-    width: 100%;
-    border-radius: 5px;
-    transition: all .3s ease-in-out;
-    transform-origin: left; 
+.menu-right {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.animated:hover .menu-nav:first-child{
-    transform: rotate(45deg);
+.menu-social {
+  display: flex;
+  align-items: center;
 }
-.animated:hover .menu-nav:nth-child(2){
-    opacity: 0;
+.menu-social li a {
+  color: #fff;
+}
+.menu-social li {
+  list-style: none;
+  margin-right: 20px;
 }
 
-.animated:hover .menu-nav:last-child{
-    transform: rotate(-45deg);
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
+.logo-nav {
+  width: 50px;
+  filter: invert(1);
+}
 
-@media (max-width:768px){
+.home {
+  font-family: var(--titulos);
+  font-size: 1rem;
+  color: #fff;
+  transition: 0.2s ease-in;
+  text-decoration: none;
+}
 
-    .logo span{
-        display: none;
-    }
+.home:hover {
+  color: #202020;
+  text-decoration: none;
+  text-decoration: underline;
+}
+.animated {
+  /* margin-left: 50px; */
+  /* margin-top: 20px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 3rem;
+  height: 3rem; */
+  gap: 1rem;
+  cursor: pointer;
+  font-family: var(--titulos);
+  color: #fff;
+}
+.animated-2 {
+  /* margin-left: 50px; */
+  /* margin-top: 20px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 3rem;
+  height: 3rem; */
+  gap: 1rem;
+  cursor: pointer;
+  font-family: var(--titulos);
+  color: #fff;
+}
 
-    .social{
-        display: none;
-    }
+.menu-nav {
+  background-color: #fff;
+  height: 1.5px;
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  transform-origin: left;
+}
 
-    
+.animated:hover .menu-nav:first-child {
+  transform: rotate(45deg);
+}
+.animated:hover .menu-nav:nth-child(2) {
+  opacity: 0;
+}
+
+.animated:hover .menu-nav:last-child {
+  transform: rotate(-45deg);
+}
+
+.idioma {
+  display: flex;
+  align-items: center;
+}
+.idioma a {
+  font-size: 12px;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: 0.2s ease-in;
+  font-family: var(--parrafos);
+  color: var(--azul);
+  color: #fff;
+}
+
+.idioma a:hover {
+  letter-spacing: 3px;
+}
+
+@media (max-width: 768px) {
+  .home {
+    display: none;
+  }
+  .animated {
+    margin-left: 0px;
+  }
 }

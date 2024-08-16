@@ -1,229 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <!-- Icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- tipografía -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Roboto:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="" />
     <!-- estilos css -->
-    <link rel="stylesheet" href="styles/style-general.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/nav.css">
-    <link rel="stylesheet" href="styles/history.css">
-    <link rel="stylesheet" href="styles/process.css">
-    <link rel="stylesheet" href="styles/blanco.css">
-    <link rel="stylesheet" href="styles/anejo.css">
-    <link rel="stylesheet" href="styles/experience.css">
-    <link rel="stylesheet" href="styles/menu-tequila.css">
-    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/style-general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/history.css" />
+    <link rel="stylesheet" href="styles/process.css" />
+    <link rel="stylesheet" href="styles/blanco.css" />
+    <link rel="stylesheet" href="styles/anejo.css" />
+    <link rel="stylesheet" href="styles/experience.css" />
+    <link rel="stylesheet" href="styles/menu-tequila.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/validation.css" />
     <title>THLL</title>
-</head>
-<body>
+    <link rel="icon" type="image/png" sizes="32*32" href="src/favicon.png" />
+  </head>
+  <body>
     <!-- SECTION HEADER -->
-        <section class="section-header">
-        <!-- NAV -->
-            <div class="nav" id="nav">
-            <nav>
-                <div class="logo">
-                    <img src="src/logo.png" alt="">
-                    <span>
-                        TEQUILA HACIENDA LOS LOBOS
-                    </span>
-                </div>
-                <div class="social">
-                    <ul>
-                        <li> <i class='bx bxl-facebook-circle '></i></li>
-                        <li> <i class='bx bxl-instagram ' ></i></li>
-                        <li> <i class='bx bxl-twitter ' ></i></li>    
-                        <li> <i class='bx bxl-tiktok ' ></i> </li>   
-                        <li> <i class='bx bxl-youtube ' ></i></li>   
-                        <li> <i class='bx bxl-pinterest ' ></i></li>
-                    </ul>
-                </div>
-                <div class="div">
-                    <a id="animated" class="animated">
-                        <div class="menu-nav"></div>
-                        <div class="menu-nav"></div> 
-                        <div class="menu-nav"></div>
-                    </a> 
-                </div>
-            </nav>
+    <section class="section-header" id="section-header">
+      <img
+        class="fondo-header"
+        id="fondo-header"
+        src="src/fondo-header.png"
+        alt=""
+      />
+      <!-- NAV -->
+      <div class="nav" id="nav">
+        <nav class="nav-normal">
+          <div class="logo">
+            <a href="index.html">
+              <img
+                class="logo-nav"
+                id="logo-nav"
+                src="src/logo-nav.png"
+                alt="Logo hacienda los lobos"
+            /></a>
+            <a class="home" href="index.html"> TEQUILA HACIENDA LOS LOBOS </a>
+          </div>
+          <div class="menu-right">
+            <ul class="menu-social">
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/TequilaHaciendaLosLobos"
+                  ><i class="bx bxl-facebook-circle"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/tequilahaciendaloslobos"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="mailto:csaavedra@haciendaloslobos.mx">
+                  <i class="bx bx-envelope"></i
+                ></a>
+              </li>
+            </ul>
+            <div class="idioma">
+              <!-- <a href="">🇲🇽MX</a> -->
+              <a href="tequila.html">ENG</a>
             </div>
-        <!-- HEADER -->
-        <div class="header">
-            <div class="title">
-                <h1 class="animated-apart-h1">TEQUILA CON DENOMINACIÓN DE ORIGEN ELABORADO 100% CON AGAVE AZÚL</h1>
-                <div class="logo-header-animated logo-header">
-                    <img src="src/div-logo.png" alt="">
-                </div>
-                <div>
-                    <p></p>
-                </div>
+            <div class="div">
+              <a id="animated" href="gallery.html" class="animated">
+                Gallery
+                <!-- <div class="menu-nav"></div>
+                <div class="menu-nav"></div>
+                <div class="menu-nav"></div> -->
+              </a>
             </div>
-            <div class="img-header">
-                <img class="animated-apart" src="src/tequila-header.png" alt="">
-            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- HEADER -->
+      <div class="header">
+        <img class="parallax" id="parallax" src="src/parrallax.png" alt="" />
+        <img
+          class="manana-parrallax"
+          id="manana-parrallax"
+          src="src/mañana2.png"
+          alt=""
+        />
+        <img
+          src="src/nubes.png"
+          class="nubes-parrallax"
+          id="nubes-parallax"
+          alt=""
+        />
+        <div class="title">
+          <h1 class="title-h1">HACIENDA LOS LOBOS</h1>
+          <div class="div-h1">
+            <img src="src/div-logo.png" alt="" />
+          </div>
+          <div class="logo-header-animated logo-header animated-parrafo">
+            <img src="src/div-logo.png" alt="" />
+          </div>
         </div>
-        <div class="count-page">
-            <span>
-                1/7
-            </span>
+        <div class="img-header animate-img-3">
+          <img
+            class="animated-apart img-header-2"
+            src="src/tequila-header.png"
+            alt=""
+          />
         </div>
-        </section>
+      </div>
+    </section>
+    <!-- secion video -->
+    <section class="video-section">
+      <div class="text-video">
+        <div id="icon-play">
+          <i id="icon-plus" class="bx bx-play-circle bx-lg"></i>
+        </div>
+        <h2>Disfruta de un gran tequila</h2>
+      </div>
+      <video
+        width="100%"
+        id="videoThll"
+        class="video-thll"
+        src="src/CLIP.mp4"
+      />
+    </section>
     <!-- SECTION  OUR HISTORY -->
     <section class="section-history" id="section-history">
-        <div class="text-history" >
-            <h2>Nuestra Historia</h2>
-            <h3>UN ENCUENTRO PERSONAL CON EL TEQUILA</h3>
-            <p class="parrafo-story">Hace algunos años, en un viaje a Jalisco, México.
-                Durante un recorrido entre colinas y montañas, 
-                tuvimos la oportunidad de conocer la cultura del 
-                Tequila.
-            </p>    
-             <p class="parrafo-story">La conversación con productores que mantienen 
-                la más pura esencia del destilado  tradicional y su respetuosa 
-                adaptación a prácticas de cuidado con el medio ambiente, 
-                hizo que nos enamoráramos del Tequila. 
-                Entendimos porqué es la bebida mexicana mas conocida en el 
-                mundo.
-            </p>
-            <p class="parrafo-story"> Tequila Hacienda Los Lobos se creó en honor a la cultura, 
-                no sólo del Tequila en Jalisco, sino a la de todos los 
-                grupos humanos en el mundo que conservan y mejoran lo bueno 
-                que como especie, hemos descubierto a lo largo de nuestra historia.
-            </p>
-            <p class="parrafo-story"> Nos complace poder compartir con las personas de 
-                cualquier lugar en el planeta, el nítido y 
-                variado matiz de sabores que brinda una bebida 
-                cuidadosamente preparada como el Tequila Hacienda 
-                Los Lobos.
-            </p>
+      <div class="text-history">
+        <h2>Nuestra Historia</h2>
+        <h3 class="animated-titulo">UN ENCUENTRO PERSONAL CON EL TEQUILA</h3>
+        <p class="parrafo-story animated-parrafo">
+          Hace algunos años durante un viaje que hicimos entre colinas y
+          montañas en Jalisco, México, tuvimos la oportunidad de conocer la
+          cultura del tequila. Conocimos el trabajo de los productores que
+          mantienen la más pura esencia del destilado tradicional y su
+          respetuosa adaptación a prácticas de cuidado del medio ambiente, lo
+          que nos hizo maravillarnos y entender el motivo de porqué es la bebida
+          mexicana más reconocida globalmente.
+        </p>
+        <p class="parrafo-story animated-parrafo">
+          Tequila Hacienda Los Lobos se creó en honor a la cultura, no sólo del
+          tequila en Jalisco, sino a la de todos los grupos humanos en el mundo
+          que conservan y mejoran lo bueno que hemos descubierto a lo largo de
+          nuestra historia como especie.
+        </p>
+        <p class="parrafo-story animated-parrafo">
+          Nos complace poder compartir con las personas de todo el mundo, el
+          nítido y variado matiz de sabores que brinda nuestra bebida
+          cuidadosamente preparada y de la cual estamos profundamente
+          enamorados.
+        </p>
+      </div>
+      <div class="img-history">
+        <div class="container-img-story">
+          <img
+            class="animate-img-3 history-img-1"
+            src="src/botella.png"
+            alt=""
+          />
+          <img class="animate-img-3 img-guys" src="src/story.png" alt="" />
         </div>
-        <div class="img-history">
-            <div class="container-img-story">
-                <img class="animate-img" src="src/botella.png" alt="">
-                <img class="animate-img img-guys" src="src/story.png" alt="">
-           </div>
-           <div class="agave">
-            <img class="animate-img" src="src/agave.png" alt="">
-           </div>
+        <div class="agave">
+          <img class="animate-img" src="src/agave.png" alt="" />
         </div>
+      </div>
     </section>
     <!-- PROCESO DE TEQUILA -->
     <section class="section-proceso">
-        <div class="container-process">
-            <div class="img-process">
-                <img class="animate-img" src="src/process2.png" alt="">
-            </div>
-            <div class="parrafo-process">
-                <h2>PROCESO</h2>
-                <p>Nuestros Tequilas son 100 % puros de agave 
-                tipo Weber-Azul Tequilana. <br> En promedio se 
-                utilizan 6 kg de agaves para destilar un litro 
-                de tequila 100% puro.
-            </p>
-            </div>
+      <div class="container-process">
+        <div class="img-process">
+          <img class="animate-img-3" src="src/process2.png" alt="" />
         </div>
+        <div class="parrafo-process">
+          <h2 class="animated-titulo">PROCESO</h2>
+          <p class="animated-parrafo">
+            Nuestros Tequilas son 100 % puros de agave tipo Weber-Azul
+            Tequilana. En promedio se utilizan 6 kg de agaves para destilar un
+            litro de tequila 100% puro.
+          </p>
+        </div>
+      </div>
     </section>
     <!-- SECTION OF TEQUILA BLANCO -->
-    <section class="section-blanco">
-        <div class="grid-blanco">
-            <div class="text-grid-blanco">
-                <h2>TEQUILA BLANCO</h2>
-            </div>
-            <div class="img-blanco">
-                <div class="container-img">
-                    <img class="after-img animate-img-2" src="src/blanco-after.png" alt="">
-                    <img class="before-img animate-img" src="src/blanco.png" alt="">
-                </div>
-            </div>
-            <div class="parrafo-blanco">
-                <p>Es <b>considerado el más puro
-                    debido </b> a que su contacto es mínimo o nulo con la 
-                   madera de los alambiques. Su color transparente se 
-                   debe a que es el líquido que se obtiene después de
-                   pasar por dos destilaciones. 
-                    Al término de las mismas, se ajusta la graduación 
-                    alcohólica permitida comercialmente, 
-                    y se ajustan también sus notas (sabores cítricos, 
-                    frutales u otros) de acuerdo al aroma y sabor que 
-                    nos caracteriza en <b>Tequila Hacienda 
-                    Los Lobos.</b></p>   
-            </div>
+    <section class="seccion-blanco">
+      <div class="grid-anejo">
+        <div class="text-grid-anejo">
+          <h2 class="animated-titulo">TEQUILA BLANCO</h2>
         </div>
+        <div class="img-anejo">
+          <div class="container-img">
+            <img class="before-img animate-img-3" src="src/blanco.png" alt="" />
+            <img
+              class="after-img-anejo animate-img-2 after-img"
+              src="src/blanco.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="parrafo-anejo">
+          <p class="animated-parrafo">
+            Este tequila es considerado el más puro debido a que el contacto que
+            tiene con la madera de los alambiques es mínimo.
+          </p>
+          <br />
+          <p class="animated-parrafo">
+            Tiene color transparente porque el líquido debe pasar por dos
+            cuidadosos procesos de destilación, lo que hace que Tequila Hacienda
+            los Lobos tenga uno de los mejores tequilas blancos en el mundo.
+          </p>
+        </div>
+      </div>
     </section>
+    <!-- SECTION OF TEQUILA AÑEJO -->
+    <section class="section-anejo">
+      <div class="grid-anejo">
+        <div class="text-grid-anejo">
+          <h2 class="animated-titulo">TEQUILA REPOSADO</h2>
+        </div>
+        <div class="img-anejo">
+          <div class="container-img">
+            <img class="before-img animate-img-3" src="src/anejo.png" alt="" />
+            <img
+              class="after-img-anejo animate-img-2 after-img"
+              src="src/anejo.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="parrafo-anejo">
+          <p class="animated-parrafo">
+            Nuestro Tequila Reposado ofrece un sabor intenso, refleja fielmente
+            el sabor del elixir de agave reposado en barricas de roble blanco.
+          </p>
+          <p class="animated-parrafo">
+            El Origen nuestro Tequila Reposado proviene de agave weber azul
+            cosechado en Jalisco. Presenta un color dorado o de oro pálido. En
+            cuanto a su aroma y sabor, se destacan claras notas frutales y
+            herbales, con matices de vainilla. Al probarlo, se confirma su gran
+            personalidad; las frutas, las notas herbales y los toques dulces
+            como la vainilla permanecen en boca. Es perfecto para disfrutar solo
+            o acompañado.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION OF TEQUILA Plata -->
+    <section class="section-anejo seccion-plata">
+      <div class="grid-anejo">
+        <div class="text-grid-anejo">
+          <h2 class="animated-titulo">TEQUILA PLATA PREMIUM</h2>
+        </div>
+        <div class="img-anejo">
+          <div class="container-img">
+            <img class="before-img animate-img-3" src="src/plata.png" alt="" />
+            <img
+              class="after-img-anejo animate-img-2 after-img"
+              src="src/plata.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="parrafo-anejo">
+          <p class="animated-parrafo">
+            <!-- Tequila Plata se origina del Agave Weber azul cosechado en Jalisco.
+            Este tequila se distingue por su color cristalino y brillante. En
+            cuanto a su aroma, presenta notas frutales que evocan la dulzura y
+            la miel del agave cocido, acompañadas de un toque cítrico y
+            deliciosas notas florales y herbales. -->
+            Tequila Plata es un destilado cristalino y brillante, hecho de Agave
+            Weber azul de Jalisco. Tiene un aroma que combina notas frutales,
+            miel de agave cocido, toques cítricos, y sutiles notas florales y
+            herbales. Reposado por 15 a 45 días, mantiene su frescura y sabor
+            herbal, ofreciendo una experiencia suave y pura que refleja la
+            esencia del agave maduro.
+          </p>
+          <br />
+          <p class="animated-parrafo">
+            <!-- Este tequila se deja reposar de 15 a 45 días, pero siempre menos de
+            60 días, ya que a partir de dos meses en barricas se convierte en un
+            tequila reposado. Este breve proceso de reposo suaviza el sabor y el
+            aroma del tequila blanco, conservando al mismo tiempo su frescura y
+            sabor herbal. Disfruta de la pureza clara y el fresco sabor suave de
+            nuestro Tequila Plata, que gracias a su cuidadosa manufactura y
+            reposo controlado, captura el espíritu del agave que tarda años en
+            madurar. -->
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Fan-section-experience -->
+    <div class="section-fan-experience">
+      <div class="description-fan-experience">
+        <h2 class="animated-titulo">FAN EXPERIENCE</h2>
+        <p class="animated-parrafo">
+          La coctelería desarrollada exclusivamente para el Tequila Hacienda Los
+          Lobos reviste la presencia de nuestros productos en los eventos a los
+          que asistimos. Hacemos experiencias inolvidables para las personas que
+          participan en exposiciones, competencias gamer, conciertos y todo tipo
+          de eventos.
+        </p>
+      </div>
+      <div class="container-fan-experience">
+        <div class="gamer-fan-experience">
+          <h3 class="titulo-experience">GAMERGY</h3>
+          <p class="animated-parrafo p-experience">
+            En 2022 patrocinamos con gran éxito el VIP Lounge del primer GAMERGY
+            en México, la exposición internacional más importante de la
+            industria de videojuegos en Europa y América Latina.
+          </p>
+        </div>
+        <div class="events-fan-experience">
+          <h3 class="titulo-experience">EVENTOS</h3>
+          <p class="animated-parrafo p-experience">
+            Nuestra marca no es sólo un Tequila, también respaldamos a nuestros
+            clientes y consumidores con experiencias que enriquecen la
+            convivencia y el buen ánimo en los eventos donde participamos.
+          </p>
+          <!-- <img class="img-experience animate-img-3" src="src/mestizo.png" alt=""> -->
+        </div>
+      </div>
+    </div>
+    <!-- <--footer-->
+    <div class="section-footer">
+      <div class="text-footer">
+        <img class="img-1" src="src/lobo.png" alt="" />
+        <img class="img-2" src="src/lobo2.png" alt="" />
 
-     <!-- SECTION OF TEQUILA AÑEJO -->
-     <section class="section-anejo">
-        <div class="grid-anejo">
-            <div class="text-grid-anejo">
-                <h2>TEQUILA AÑEJO</h2>
-            </div>
-            <div class="img-anejo">
-                <div class="container-img">
-                    <img  class="after-img-anejo animate-img-2" src="src/anejo.png" alt="">
-                    <img  class="before-img animate-img" src="src/anejo.png" alt="">
-                </div>
-            </div>
-            <div class="parrafo-anejo">
-                <p>Añejar implica envejecer o permitir que un licor adquiera tonalidades en aroma y sabor que son transmitidos por otros elementos que hacen aún más rico el producto.
-                    El añejamiento de tequila se aprecia en el color  dorado (en diferentes tonalidades) y su sabor y aroma son más suavizados y fragantes, producto del curtimiento con madera y otros elementos con los que el líquido tiene contacto durante un tiempo determinado. 
-                    La elaboración del Tequila Añejo de Hacienda Los Lobos, se ciñe a los estándares aceptados en la industria pero agregando el toque de la experiencia, que le brinda notas únicas al aroma y sabor que hacen la diferencia.
-                </p>   
-            </div>
+        <div class="footer-h3">
+          <a
+            target="_blank"
+            href="https://spanish.alibaba.com/p-detail/Tequila-1600564654708.html?spm=a2700.themePage.MX.7.6f2b3aa3az9eOq"
+            ><h3>TEQUILA HACIENDA LOS LOBOS</h3></a
+          >
         </div>
-     </section>
-     <!-- SECTION FAN EXPERIENCE -->
-     <section class="fan-experience">
-        <div class="container-fan-experiencie">
-            <div class="text-experience">
-                <h2>FAN EXPERIENCE</h2>
-                <p>La <b>coctelería desarrollada en exclusiva</b> para el Tequila Hacienda Los Lobos, reviste la presencia de nuestros productos en los eventos a los que asistimos. <b>Contribuímos en hacer inolvidable la experiencia para las personas</b> que participan en exposiciones, competencias gamer o conciertos.
-                    En 2022 patrocinamos con gran éxito el  <b>VIP Lounge del primer GAMERGY México. La Expo internacional más importante de la industria de videojuegos en Europa y América Latina</b>.     
-                    Nuestra marca no es sólo un Tequila, respaldamos a nuestros clientes y consumidores con experiencias que enriquecen la  convivencia y el buen ánimo en los eventos donde participamos.
-                </p> <br>
-                <img src="src/hr.png" alt="">
-            </div>
-            <div class="img-experience-2">
-                <img src="src/fan-bottle.png" alt="">
-            </div>
+      </div>
+      <div class="background-footer">
+        <div class="div-text-footer">
+          <h2>BRANDING</h2>
         </div>
-     </section>
-     <!-- COMPLETE VIEW MENU -->
-     <div id="menu-tequila" class="menu-tequila">
-        <div class="slogan">
-            <p>Una nueva generación de Tequila</p>
-            <div class="box-hr">
-                <img src="src/logo.png" alt="">
-            </div>
+        <a
+          target="_blank"
+          href="https://www.instagram.com/tequilahaciendaloslobos"
+        >
+          <div class="footer-img">
+            <img class="animated-hover" src="src/18.png" alt="" />
+            <img class="animate-img-3 animated-hover" src="src/19.png" alt="" />
+            <img
+              class="animate-img-3 animated-hover ocultar"
+              src="src/20.png"
+              alt=""
+            />
+            <img
+              class="animate-img-3 animated-hover ocultar"
+              src="src/21.png"
+              alt=""
+            />
+            <img
+              class="animate-img-3 animated-hover ocultar"
+              src="src/22.png"
+              alt=""
+            />
+            <img class="animate-img-3 animated-hover" src="src/24.png" alt="" />
+            <img class="animate-img-3 animated-hover" src="src/25.png" alt="" />
+            <img class="animated-hover" src="src/23.png" alt="" />
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- VALIDATION AGE -->
+    <div class="container-section-validate" id="validate">
+      <div class="text-validate">
+        <img src="src/logo.png" alt="" />
+        <h2>
+          INTRODUCE TU EDAD <br />
+          PARA ENTRAR A NUESTRO SITIO
+        </h2>
+      </div>
+      <div class="div-form">
+        <input id="year" placeholder="Edad" type="number" required />
+        <p class="advice" id="alert">Parece que no eres mayor de 18 años</p>
+        <br />
+        <p class="acceder" id="acceder">Entrar y aceptar</p>
+      </div>
+      <p class="terms">
+        Los términos y condiciones de la página web de tequila establecen que el
+        uso de la plataforma implica la aceptación de las políticas y normas
+        establecidas. Se prohíbe el acceso no autorizado a la página, así como
+        el uso inadecuado o ilegal del contenido y materiales presentes en la
+        misma. El usuario se compromete a no utilizar la página para fines
+        comerciales o publicitarios sin previa autorización. Además, la página
+        no se hace responsable de los daños o perjuicios derivados del mal uso o
+        acceso a la plataforma. El usuario reconoce y acepta que toda la
+        información y contenido presente en la página web está protegido por
+        derechos de autor y propiedad intelectual, y se compromete a respetar
+        estos derechos en todo momento.
+      </p>
+    </div>
+    <!-- COMPLETE VIEW MENU -->
+    <div id="menu-tequila" class="menu-tequila">
+      <div class="slogan">
+        <p class="animated-titulo">Una nueva generación de Tequila</p>
+        <div class="box-hr">
+          <img src="src/div-logo.png" alt="" />
         </div>
-            <div class="productos-menu">
-                <div class="text-menu">
-                    <h4>TEQUILA BLANCO</h4>
-                </div>
-                <div class="img-menu">
-                    <img src="src/blanco.png" alt="">
-                </div>
-                <div class="text-menu">
-                    <h4>TEQUILA AÑEJO</h4>
-                </div>
-                <div class="img-menu">
-                    <img src="src/anejo.png" alt="">
-                </div>
-                <div class="text-menu manada">
-                    <h4>ÚNETE A LA MANADA</h4>
-                </div>
-                <div class="img-menu2 img-menu">
-                    <img src="src/bootcamp.png" alt="">
-                </div>
-            </div>
-     </div>
-     <script src="javascript.js"></script>
-</body>
+      </div>
+      <div class="productos-menu">
+        <div class="text-menu">
+          <h4 class="animate-img-3">TEQUILA BLANCO</h4>
+          <div class="img-menu animate-img-3">
+            <img src="src/blanco.png" alt="" />
+          </div>
+        </div>
+
+        <div class="text-menu">
+          <h4 class="animate-img-3">TEQUILA REPOSADO</h4>
+          <div class="img-menu animate-img-3">
+            <img src="src/anejo.png" alt="" />
+          </div>
+        </div>
+        <div class="text-menu">
+          <h4 class="animate-img-3">TEQUILA PLATA PREMIUM</h4>
+          <div class="img-menu animate-img-3">
+            <img src="src/plata.png" alt="" />
+          </div>
+        </div>
+
+        <div class="text-menu manada">
+          <h4 class="animate-img-3">ÚNETE A LA MANADA</h4>
+          <div class="img-menu2 img-menu animate-img-3">
+            <img src="src/bootcamp.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="javascript.js"></script>
+    <script src="validation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+  </body>
 </html>

@@ -1,97 +1,152 @@
-@import url('style-general.css');
+@import url("style-general.css");
 
-.menu-tequila{
-    width: 100%;
-    display: none;
-    position: fixed;
-    height: 100vh;
-    top: 0;
-    background-color: var(--gris);
-    padding-top: 120px;
+.menu-tequila {
+  width: 100%;
+  display: none;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  background-color: var(--gris);
+  padding-top: 120px;
+  z-index: 200;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.slogan{
-    font-family: var(--parrafos);
-    font-weight: 300;
-    font-size: 25px;
-    text-align: center;
+.slogan {
+  font-family: var(--parrafos);
+  font-weight: 300;
+  font-size: 25px;
+  text-align: center;
 }
 
-.box-hr{
+.title h1 {
+  margin-top: 150px;
+}
+
+.box-hr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-hr img {
+  margin: 20px;
+}
+.box-hr::before {
+  content: url("../src/hr.png");
+}
+
+.box-hr::after {
+  content: url("../src/hr.png");
+}
+
+.productos-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.text-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.text-menu h4 {
+  font-size: 30px;
+  font-weight: 100;
+  font-family: var(--titulos);
+  cursor: pointer;
+}
+
+.img-menu img {
+  width: 40px;
+  transition: 1s ease-in-out;
+}
+
+.img-menu:hover {
+  transform: scale(0.7);
+}
+
+.img-menu2 img {
+  width: 100px;
+}
+
+.mostrar {
+  display: block;
+  animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+.div-h1 {
+  display: none;
+}
+
+@keyframes swing-in-top-fwd {
+  0% {
+    transform: rotateX(-100deg);
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .productos-menu {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.box-hr::before{
-    content: url('../src/hr.png');
-}
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+  }
 
-.box-hr::after{
-    content: url('../src/hr.png');
-}
+  .slogan {
+    display: none;
+  }
+  .manada h4 {
+    text-align: center;
+  }
 
+  .text-menu h4 {
+    font-size: 25px;
+    text-align: left;
+  }
 
-.productos-menu{
-    width: 70%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-}
+  .img-menu img {
+    width: 100px;
+  }
 
-.text-menu h4{
-    font-size: 30px;
-    font-weight: 100;
-    font-family: var(--titulos);
-}
-
-.img-menu{
-    margin: auto;
-}
-
-.img-menu img{
-    width: 200px;
-    transition: 1s ease-in-out;
-}
-
-.img-menu:hover{
-    transform: scale(.7);
-}
-
-.img-menu2 img{
-    width: 300px;
-}
-
-.mostrar{
+  .div-h1 {
     display: block;
-    animation:swing-in-top-fwd .5s cubic-bezier(.175,.885,.32,1.275) both
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+  }
+  .div-h1 img {
+    width: 50px;
+  }
 
-
-@keyframes swing-in-top-fwd{0%{transform:rotateX(-100deg);transform-origin:top;opacity:0}100%{transform:rotateX(0deg);transform-origin:top;opacity:1}}
-
-
-@media(max-width:768px){
-    .menu-tequila{
-    
-        position: fixed;
-    }
-    .productos-menu{
-        display: flex;
-        flex-direction: column;   
-        text-align: center;
-    }
-
-    .slogan{
-        display: none;
-    }
-    .manada h4{
-        text-align: center;
-    }
-
-    .text-menu h4{
-        font-size: 25px;
-    }
+  .title h1 {
+    margin-top: 0px;
+  }
+  .div-h1::after {
+    content: url("../src/tequila-hr.png");
+  }
+  .div-h1::before {
+    content: url("../src/tequila-hr.png");
+  }
+  .manada {
+    flex-direction: column;
+  }
 }

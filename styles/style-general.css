@@ -1,18 +1,66 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-:root{
-      /* colores */
-    --amarillo:#E4E83A;
-    --azul:#02182B;
-    --gris:#EDEDED;
-      /* tipografías   */
-    --titulos:'IM FELL French Canon SC';  
-    --parrafos:'Roboto';
+:root {
+  /* colores */
+  --amarillo: #fdee99;
+  --azul: #02182b;
+  --gris: #ededed;
+  /* tipografías   */
+  --titulos: "IM FELL French Canon SC";
+  --parrafos: "Roboto";
 
-    /* FONT-SIZE */
-    --fontsize-responsive:20px;
+  /* FONT-SIZE */
+  --fontsize-responsive: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+body {
+  position: relative;
+}
+
+.video-section {
+  overflow: hidden;
+  height: 650px;
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.text-video {
+  position: relative;
+  z-index: 20;
+  padding: 20px;
+}
+
+.text-video h2 {
+  font-size: 50px;
+  color: #fff;
+  font-family: var(--titulos);
+}
+.video-thll {
+  position: absolute;
+  top: 0;
+  width: 100;
+}
+
+.bx-play-circle,
+.bx-pause-circle {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .video-section {
+    height: 211px;
+  }
+  .text-video h2 {
+    font-size: 20px;
+  }
 }

@@ -1,0 +1,137 @@
+@import url("style-general.css");
+
+.container-section-validate {
+  position: fixed;
+  height: 100vh;
+  background-color: #fff;
+  top: 0;
+  z-index: 350;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--parrafos);
+  display: none;
+}
+
+.animation-aviso {
+  animation: aviso 0.5s ease-in-out;
+  display: block;
+}
+
+@keyframes aviso {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.text-validate {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.text-validate img {
+  width: 200px;
+}
+
+.div-form {
+  display: flex;
+  width: 30%;
+  margin: auto;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.div-form input {
+  padding: 20px;
+  border-radius: 50px;
+  border: 1px solid var(--azul);
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.acceder {
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  background-color: var(--azul);
+  color: var(--gris);
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.terms {
+  background-color: var(--azul);
+  color: var(--gris);
+  padding: 100px;
+  text-align: justify;
+}
+
+.advice {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #de3c4b;
+  animation: p-advice 0.1s ease-in-out;
+}
+
+@keyframes p-advice {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-section-validate {
+  }
+
+  .terms {
+    margin-top: 50px;
+    height: 200px;
+    overflow: scroll;
+    padding: 20px;
+  }
+  .text-validate {
+    margin-top: 100px;
+  }
+
+  .acceder {
+    width: 100%;
+    margin: 0;
+  }
+
+  .div-form {
+    width: 90%;
+  }
+  .text-validate img {
+    width: 50px;
+  }
+
+  .div-form input {
+    padding: 10px;
+    font-size: 20px;
+    width: 200px;
+    margin: auto;
+    width: 100%;
+  }
+
+  .text-validate h2 {
+    font-size: 20px;
+  }
+}
